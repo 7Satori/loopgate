@@ -3,13 +3,13 @@ import Head from "next/head";
 const NextHeadBase = () => {
   const baseUrl = "https://loopgate.netlify.app/";
   const ogImgUrl = `${baseUrl}/images/splash.png`;
-  const title = "LoopGate — Token-Gated Content using Loopring NFTs";
+  const title = "The Ancients";
   const description =
-    "Securely and easily access exclusive digital content with LoopGate, using Loopring NFTs.";
+    "An audio-visual experience. Civilizations from the cosmos and technologies from another realm await discovery.";
 
   return (
     <Head>
-      <title>LoopGate - Token-Gated Content using Loopring NFTs</title>
+      <title>The Ancients</title>
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
