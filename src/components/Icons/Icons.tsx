@@ -2,7 +2,7 @@ interface IconProps {
   className: string;
 }
 
-export const GithubIcon = ({ className }: IconProps) => {
+export const LoopExchangeIcon = ({ className }: IconProps) => {
   return (
     <svg className={className} viewBox="0 0 24 24">
       <path

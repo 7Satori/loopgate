@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 const NextHeadBase = () => {
-  const baseUrl = "https://loopgate.netlify.app/";
+  const baseUrl = "https://theancients.xyz/";
   const ogImgUrl = `${baseUrl}/images/splash.png`;
   const title = "The Ancients";
   const description =
