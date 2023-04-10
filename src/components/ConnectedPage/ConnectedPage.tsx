@@ -37,7 +37,7 @@ const ConnectedPage = () => {
 
   return (
     <div className="flex flex-col items-center flex-grow space-y-8">
-      <div className="max-w-2xl w-full py-8 px-6">
+      <div className="max-w-2xl w-full py-8 px-6 text-center">
         <h1 className="text-2xl font-medium font-display mb-4">
           Your unlocked content
         </h1>
@@ -48,7 +48,7 @@ const ConnectedPage = () => {
             <p>Loading...</p>
           </div>
         ) : (
-          <>
+          <div className="bg-slate-100/50 backdrop-blur-lg backdrop-filter backdrop-blur-md z-1 rounded-lg p-20 shadow-1g" style={{ borderRadius: "20px" }}>
             {unlocks.length >= 1 ? (
               <div className="flex flex-col mb-8">
                 {unlocks.map((unlock) => (
@@ -63,7 +63,7 @@ const ConnectedPage = () => {
             ) : (
               <EmptyState />
             )}
-          </>
+          </div>
         )}
       </div>
     </div>

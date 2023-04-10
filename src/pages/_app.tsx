@@ -9,6 +9,7 @@ import { siwe } from "../utils/siwe";
 import { overrides } from "../styles/ConnectKit/overrides";
 import NextHeadBase from "../components/SEO/NextHeadBase";
 import { inter, unbounded } from "../components/Fonts/Fonts";
+import ConnectPrompt from "../components/ConnectPrompt";
 
 const App = ({ Component, pageProps }: AppProps) => {
   const [mounted, setMounted] = useState(false);
@@ -26,7 +27,11 @@ const App = ({ Component, pageProps }: AppProps) => {
         >
           <main className={`${inter.variable} ${unbounded.variable} font-sans`}>
             <NextHeadBase />
-            {mounted && <Component {...pageProps} />}
+            {mounted && (
+              <>
+                <Component {...pageProps} />
+              </>
+            )}
           </main>
         </ConnectKitProvider>
       </siwe.Provider>
@@ -35,6 +40,8 @@ const App = ({ Component, pageProps }: AppProps) => {
 };
 
 export default App;
+
+
 
 // const disclaimerOptions = {
 //   disclaimer: (
